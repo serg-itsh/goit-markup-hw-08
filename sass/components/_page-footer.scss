@@ -1,0 +1,118 @@
+/* <!-- Футер -->    
+  <!-- Подвал --> */
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  &__box {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  &__logo-address {
+    margin-right: 70px;
+  }
+}
+
+// /* WebStudio */
+// .page-footer__logo-white {
+//   color: getColor('primary-color');
+// }
+
+/* Address */
+.page-footer__link {
+  /* margin-left: auto; */
+  margin-top: 20px;
+}
+
+/* г. Киев, пр-т Леси Украинки, 26 */
+.page-footer__address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* info@example.com */
+/* +38 099 111 11 11 */
+
+.page-footer__links {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-social__slogan {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor('primary-color');
+}
+.social-row__link--white {
+  fill: getColor('primary-color');
+}
+
+/* <!-- форма подписки --> */
+.page-footer__form {
+  margin-left: auto;
+}
+
+.page-footer__form > .footer-social__slogan {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.page-footer__form-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  // box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  color: rgba(255, 255, 255, 0.6);
+  transition: transform var(--transform);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--footer-font-color);
+    letter-spacing: 0.03em;
+  }
+}
+
+.page-footer__btn {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.icon-send {
+  margin-left: 10px;
+  /* fill: currentColor; */
+  fill: getColor('primary-color');
+}

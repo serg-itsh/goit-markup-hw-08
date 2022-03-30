@@ -1,0 +1,30 @@
+.auth-nav {
+  display: flex;
+
+  &__item--size {
+    margin-left: auto;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+/* +38 096 111 11 11 */
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+  color: getColor('contacts-colors');
+  text-decoration: none;
+  transition: color var(--transform);
+
+  &:hover,
+  &:focus {
+    color: getColor('background-hover-btn');
+  }
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

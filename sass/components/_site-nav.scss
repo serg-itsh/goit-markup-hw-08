@@ -1,0 +1,48 @@
+/* Menu Nav */
+/* Студия */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: block;
+    color: getColor('title-text-color');
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--transform);
+
+    &--current {
+      color: getColor('background-hover-btn');
+      text-decoration: none;
+      position: relative;
+    }
+
+    /* Студия */
+    &--current::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #2196f3;
+      border-radius: 2px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor('background-hover-btn');
+    /* hover */
+    /* position: absolute; */
+  }
+}

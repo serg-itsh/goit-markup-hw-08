@@ -1,0 +1,38 @@
+/* <!-- Постоянные клиенты --> */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  &__label {
+    width: 170px;
+    height: 92px;
+    border: 1px solid getColor('background-social-links');
+    border-radius: 4px;
+    transition: border-color var(--transform);
+
+    &:hover {
+      border-color: #2196f3;
+    }
+
+    &:hover .clients__icon {
+      fill: #2196f3;
+    }
+  }
+
+  &__icon {
+    fill: getColor('background-social-links');
+    transition: fill var(--transform);
+  }
+}
+
+.clients__inner:not(:last-child) {
+  margin-right: 30px;
+}

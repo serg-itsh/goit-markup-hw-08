@@ -1,0 +1,20 @@
+/* WebStudio */
+.logo {
+  // color: getColor('title-text-color');
+  color: #2196f3;
+  font-family: Raleway, sans-serif;
+  width: 700;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-dark {
+  color: getColor('logo-color-darck');
+  margin-right: 93px;
+}
+
+.page-footer__logo-white {
+  color: getColor('primary-color');
+}

@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+:root {
+  // --title-text-color: #212121;
+  // --contacts-colors: #757575;
+  // --primary-color: #ffffff;
+  // --accent-color: #18a0fb;
+  // --overlay-hero: rgba(47, 48, 58, 0.4);
+  // --team-social-icon-color: #afb1b8;
+  // --background-color: #2f303a;
+  // --pic-background-color: #f5f4fa;
+  // --pic-background-color: #f5f4fa;
+  // --border-checkbox: #212121;
+  // --border-hover-checkbox: #000000;
+
+  // --primary-text-color: rgba(0, 0, 0, 0.8);
+  // --logo-color-darck: #212121;
+  --transition: rgba(0.4, 0, 0.2, 1);
+  --transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  color: getColor('title-text-color');
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+/* .no-style-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Утилиты */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
