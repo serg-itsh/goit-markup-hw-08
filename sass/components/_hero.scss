@@ -22,13 +22,26 @@
   &__title {
     margin: 0 auto;
     color: getColor('primary-color');
-    width: 696px;
+    // width: 696px;
+    width: 360px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    // font-size: 44px;
+    // line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 480px) {
+    background-color: getColor('background-footer');
+    background-image: linear-gradient(
+        to right,
+        getColor('background-overlay'),
+        getColor('background-overlay')
+      ),
+      url(../images/Img-h.jpg);
   }
 }
 
