@@ -17,6 +17,11 @@
   // margin-bottom: 50px;
   margin-bottom: 40px;
 
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
   &__btn {
     margin-bottom: 15px;
   }

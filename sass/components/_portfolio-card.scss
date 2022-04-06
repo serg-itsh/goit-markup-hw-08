@@ -7,11 +7,25 @@
   align-items: center;
   margin: -15px;
 
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+
   &__item {
     display: flex;
     flex-wrap: wrap;
     // width: 370px;
     margin: 15px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
   }
 
   &__project {
@@ -40,6 +54,23 @@
   margin-right: auto;
 
   overflow: hidden;
+
+  & img {
+    // @media screen and (min-width: 480px) {
+    //   width: 450px;
+    //   // height: 460px;
+    // }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 294px;
+    }
+  }
 
   /* Технокряк */
   &__text {
@@ -75,6 +106,26 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0px;
+
+  // &:not(:last-child) {
+  //   // margin-bottom: 30px;
+
+  //   @media screen and (min-width: 768px) {
+  //     padding-bottom: 56px;
+  //   }
+  // }
+
+  // &:first-child {
+  //   margin-bottom: 56px;
+  // }
+
+  // &:first-child {
+  //   @media screen and (min-width: 768px) {
+  //     padding: 20px 24px 56px;
+  //     border: 1px solid #eeeeee;
+  //     border-top: 0px;
+  //   }
+  // }
 }
 .project__title {
   margin-bottom: 4px;
@@ -95,4 +146,46 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  &:first-child {
+    padding-bottom: 56px;
+  }
+
+  // &:first-child {
+  //   @media screen and (min-width: 768px) {
+  //     margin-bottom: 56px;
+  //   }
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   &:first-child {
+  //     margin-bottom: 56px;
+  //   }
+  // }
+
+  // &:first-child {
+  //   margin-bottom: 56px;
+  // }
+
+  // &:first-child {
+  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //     margin-bottom: 56px;
+  //   }
+  // }
 }
+
+.project__text-size {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 36px;
+  }
+}
+
+// .project__text-size {
+//   @media screen and (min-width: 768px) {
+//     padding-bottom: 36px;
+//   }
+// }
+
+// .project__text:first-child {
+//   margin-bottom: 56px;
+// }
