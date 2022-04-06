@@ -30,12 +30,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     // margin-top: 50px;
 
-    @media (min-width: 480px) {
-      // display: -webkit-box;
-      display: block;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: -15px;
     }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: -15px;
+    }
+
+    // @media (min-width: 480px) {
+    //   // display: -webkit-box;
+    //   display: block;
+    // }
   }
 
   &__column {
@@ -47,6 +61,32 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    & img {
+      // @media screen and (min-width: 480px) {
+      //   width: 450px;
+      //   // height: 460px;
+      // }
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+      }
     }
   }
 
