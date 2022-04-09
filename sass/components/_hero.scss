@@ -4,8 +4,8 @@
   // padding-top: 200px;
   // padding-bottom: 200px;
   padding-top: 118px;
-  padding-bottom: 198px;
-  max-width: 1600px;
+  padding-bottom: 118px;
+  // max-width: 1600px;
   margin: 0 auto;
   text-align: center;
   background-color: getColor('background-footer');
@@ -41,16 +41,17 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
+}
 
-  // @media screen and (min-width: 480px) {
-  //   background-color: getColor('background-footer');
-  //   background-image: linear-gradient(
-  //       to right,
-  //       getColor('background-overlay'),
-  //       getColor('background-overlay')
-  //     ),
-  //     url(../images/Img-h.jpg);
-  // }
+@media screen and (min-width: 960px) {
+  .hero__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -63,23 +64,6 @@
       url(../images/header/Header-img@2x-960.jpg);
   }
 }
-
-// @media screen and (max-width: 767px) {
-//   .hero {
-//     background-image: linear-gradient(
-//         to right,
-//         getColor('background-overlay'),
-//         getColor('background-overlay')
-//       ),
-//       url(../images/header/Header-img-480.jpg);
-//   }
-
-//   @media screen and (min-resolution: 2dppx) {
-//     .hero {
-//       background-image: url(../images/header/Header-img@2x-960.jpg);
-//     }
-//   }
-// }
 
 @media screen and (min-width: 576px) {
   .hero {
@@ -103,25 +87,11 @@
   }
 }
 
-// @media screen and (min-width: 489px) {
-//   .hero {
-//     background-image: linear-gradient(
-//         to right,
-//         getColor('background-overlay'),
-//         getColor('background-overlay')
-//       ),
-//       url(../images/header/Header-img-768.jpg);
-//   }
-
-//   @media screen and (min-resolution: 2dppx) {
-//     .hero {
-//       background-image: url(../images/header/Header-img@2x-1536.jpg);
-//     }
-//   }
-// }
-
 @media screen and (min-width: 960px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         getColor('background-overlay'),
@@ -142,28 +112,12 @@
   }
 }
 
-// @media screen and (min-width: 769px) {
-//   .hero {
-//     background-image: linear-gradient(
-//         to right,
-//         getColor('background-overlay'),
-//         getColor('background-overlay')
-//       ),
-//       url(../images/header/Header-Img-1600.jpg);
-//   }
-
-//   @media screen and (min-resolution: 2dppx) {
-//     .hero {
-//       background-image: url(../images/header/Header-Img@2x-3200.jpg);
-//     }
-//   }
-// }
-
 /* Batton */
 .button {
   margin-top: 30px;
   width: 200px;
   height: 50px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
