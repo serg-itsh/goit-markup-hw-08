@@ -78,3 +78,9 @@
     /* position: absolute; */
   }
 }
+
+@media screen and (max-width: 768px) {
+  .site-nav__item--indent {
+    margin: 32px 0;
+  }
+}
