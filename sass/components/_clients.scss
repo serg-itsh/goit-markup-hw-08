@@ -1,7 +1,15 @@
 /* <!-- Постоянные клиенты --> */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__inner {
     text-align: center;
@@ -29,12 +37,20 @@
   &__title {
     margin-bottom: 50px;
     font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
     // font-size: 36px;
     // line-height: 1.17;
     text-align: center;
 
     font-size: 28px;
-    line-height: 1.18px;
+    // line-height: 1.18px;
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 
   &__label {
@@ -46,11 +62,13 @@
     border-radius: 4px;
     transition: border-color var(--transform);
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: #2196f3;
     }
 
-    &:hover .clients__icon {
+    &:hover .clients__icon,
+    &:focus .clients__icon {
       fill: #2196f3;
     }
   }
