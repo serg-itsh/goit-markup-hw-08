@@ -5,6 +5,11 @@
   // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* filters */
@@ -15,12 +20,16 @@
   align-items: center;
   border-color: teal;
   // margin-bottom: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
+
+  // @media screen and (min-width: 1200px) {
+  //   margin-bottom: 30px;
+  // }
 
   &__btn {
     margin-bottom: 15px;
@@ -33,10 +42,11 @@
 
 .filters-row__btn--active {
   padding: 6px 22px;
-  font-size: 16px;
-  line-height: 1.63;
   border: 0;
   border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
   border: none;
   font-family: inherit;
   transition: color var(--transform), background-color var(--transform),
