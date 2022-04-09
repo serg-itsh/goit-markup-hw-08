@@ -34,7 +34,7 @@
   }
 
   &__logo-address {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
 
     @media (min-width: 1200px) {
       margin-right: 70px;
@@ -59,6 +59,10 @@
 .page-footer__link {
   /* margin-left: auto; */
   margin-top: 20px;
+}
+
+.page-footer__item {
+  margin-bottom: 9px;
 }
 
 /* г. Киев, пр-т Леси Украинки, 26 */
