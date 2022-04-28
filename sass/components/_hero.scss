@@ -5,7 +5,7 @@
   // padding-bottom: 200px;
   padding-top: 118px;
   padding-bottom: 118px;
-  // max-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
   background-color: getColor('background-footer');
@@ -14,7 +14,7 @@
       getColor('background-overlay'),
       getColor('background-overlay')
     ),
-    url(/images/header/Header-img-480.jpg);
+    url(../images/header/Header-img-480.jpg);
     // background-image: linear-gradient(to right,
     //   getColor('background-overlay'),
     //   getColor('background-overlay')),
@@ -65,7 +65,7 @@
         getColor('background-overlay'),
         getColor('background-overlay')
       ),
-      url(/images/header/Header-img@2x-960.jpg);
+      url(../images/header/Header-img@2x-960.jpg);
       // background-image: linear-gradient(to right,
       //   getColor('background-overlay'),
       //   getColor('background-overlay')),
@@ -80,7 +80,7 @@
         getColor('background-overlay'),
         getColor('background-overlay')
       ),
-      url(/images/header/Header-img-768.jpg);
+      url(../images/header/Header-img-768.jpg);
       // background-image: linear-gradient(to right,
       //   getColor('background-overlay'),
       //   getColor('background-overlay')),
@@ -94,7 +94,37 @@
           getColor('background-overlay'),
           getColor('background-overlay')
         ),
-        url(/images/header/Header-img@2x-1536.jpg);
+        url(../images/header/Header-img@2x-1536.jpg);
+        // background-image: linear-gradient(to right,
+        //   getColor('background-overlay'),
+        //   getColor('background-overlay')),
+        // url(../images/header/Header-img@2x-1536.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        getColor('background-overlay'),
+        getColor('background-overlay')
+      ),
+      url(../images/header/Header-img-768.jpg);
+      // background-image: linear-gradient(to right,
+      //   getColor('background-overlay'),
+      //   getColor('background-overlay')),
+      // url(../images/header/Header-img-768.jpg);
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          getColor('background-overlay'),
+          getColor('background-overlay')
+        ),
+        url(../images/header/Header-img@2x-1536.jpg);
         // background-image: linear-gradient(to right,
         //   getColor('background-overlay'),
         //   getColor('background-overlay')),
@@ -105,9 +135,9 @@
 
 @media screen and (min-width: 960px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // max-width: 1600px;
     // background-image: linear-gradient(
     //     to right,
     //     getColor('background-overlay'),
@@ -117,7 +147,7 @@
     background-image: linear-gradient(to right,
       getColor('background-overlay'),
       getColor('background-overlay')),
-    url(/images/header/Header-img-1600.jpg);
+    url(../images/header/Header-img-1600.jpg);
      
   }
 
@@ -132,10 +162,17 @@
         background-image: linear-gradient(to right,
           getColor('background-overlay'),
           getColor('background-overlay')),
-        url(/images/header/Header-img@2x-3200.jpg);
+        url(../images/header/Header-img@2x-3200.jpg);
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+} 
+  
 
 /* Batton */
 .button {
