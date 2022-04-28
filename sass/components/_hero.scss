@@ -65,7 +65,7 @@
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
