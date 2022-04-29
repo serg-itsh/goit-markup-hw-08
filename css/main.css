@@ -384,7 +384,14 @@ img {
 @media screen and (min-width: 768px) {
   .auth-nav__link {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -1002,7 +1009,6 @@ textarea {
 
 /*  <!-- Чем мы занимаемся --> */
 .work {
-  padding-top: 34px;
   padding-bottom: 94px;
 }
 
@@ -1104,7 +1110,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .team__title {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 65px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17px;
@@ -1302,6 +1308,7 @@ textarea {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -1599,12 +1606,21 @@ textarea {
 /* <!-- Футер -->    
   <!-- Подвал --> */
 .footer-social {
-  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .footer-social {
-    padding-top: 60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-social {
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1741,6 +1757,12 @@ textarea {
 .page-footer__form > .footer-social__slogan {
   display: inline-block;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__form > .footer-social__slogan {
+    margin-top: 60px;
+  }
 }
 
 .page-footer__form-input {
