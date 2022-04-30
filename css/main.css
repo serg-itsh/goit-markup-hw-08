@@ -499,7 +499,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
     font-weight: 900;
@@ -517,42 +517,42 @@ img {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/Header-img-768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-img-768.jpg);
   }
 }
 
-@media screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/Header-img@2x-1536.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-img@2x-1536.jpg);
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/Header-img-768.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-img-768.jpg);
   }
 }
 
-@media screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/Header-img@2x-1536.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-img@2x-1536.jpg);
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/Header-Img-1600.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-Img-1600.jpg);
   }
 }
 
-@media screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header/Header-Img@2x-3200.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/Header-Img@2x-3200.jpg);
@@ -1088,32 +1088,31 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   background: #f5f4fa;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
   .team {
-    padding-bottom: 79px;
+    padding: 94px 0;
   }
 }
 
 .team__title {
-  padding-top: 60px;
-  padding-bottom: 30px;
   color: #212121;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
   font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .team__title {
-    padding-top: 94px;
-    padding-bottom: 65px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
   }
 }
 
@@ -1762,6 +1761,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .page-footer__form > .footer-social__slogan {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__form > .footer-social__slogan {
+    margin-top: 0px;
   }
 }
 
