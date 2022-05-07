@@ -62,12 +62,6 @@ img {
   text-decoration: none;
 }
 
-.clients__row {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .button {
   color: #2196f3;
   color: #212121;
@@ -1239,8 +1233,7 @@ textarea {
   transition: background-color var(--transform);
 }
 
-.social-row__link:hover,
-.social-row__link:focus {
+.social-row__link:hover, .social-row__link:focus {
   fill: #ffffff;
   background: #2196f3;
 }

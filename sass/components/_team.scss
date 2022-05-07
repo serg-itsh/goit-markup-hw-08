@@ -1,35 +1,25 @@
 /* <!-- Наша команда --> */
-.team {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+.team {  
   align-items: center;
   background: #f5f4fa;
   padding: 60px 0;
   // padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-    // margin-bottom: 79px;
-    // padding-bottom: 79px;
-
+    padding: 94px 0;    
   }
 
   &__title {    
     color: getColor('title-text-color');
-    font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.17;
+    font-weight: 700;    
     text-align: center;
     letter-spacing: 0.03em;
     font-size: 28px;
     line-height: 1.18;
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
-      // margin-top: 94px;
-      margin-bottom: 50px;
-      // padding-top: 94px;
-      // padding-bottom: 65px;
+    @media screen and (min-width: 1200px) {      
+      margin-bottom: 50px;     
       font-weight: 700;
       font-size: 36px;
       line-height: 1.17;
